@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+ <bean id="emp1" class="com.nt.beans.Employee1">
+<constructor-arg name="eno" value="12"/>
+<constructor-arg name="ename" value="raja"/>
+<constructor-arg name="eaddrs" value="hyd"/>
+  </bean>
+  <bean id="emp2" class="com.nt.beans.Employee1">
+<constructor-arg name="eno" value="08"/>
+<constructor-arg name="ename" value="Abhi"/>
+</bean>
+<bean id="emp3" class="com.nt.beans.Employee1">
+<constructor-arg name="ename" value="raja"/>
+  <constructor-arg name="eaddrs" value="bbsr"/>
+  <property name="Name" value="23"/> 
+  </bean>
+  <bean id="stud1" class="com.nt.beans.Student">
+  <property name="sname" value="kk"/>
+   <property name="collegeName" value="igit"/>
+    <property name="qlfy" value="mca"/>
+    </bean>
+    <bean id="cust1" class="com.nt.beans.Customer">
+  <constructor-arg name="cno" value="56"/>
+  <constructor-arg name="cname" value="avi"/>
+  <constructor-arg name="billamt" value="578"/>
+  <property name="Caddrs" value="kjr"/>
+  <property name="Mobileno"  value="6370"/>
+  </bean>
+</beans>        
